@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14E7f" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Demo-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="Demo" id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <table alignment="left" id="EZb-r4-qQX">
+                            <items>
+                                <tableRow identifier="Controller" id="TFY-b1-eFp" customClass="CountTableRowController">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="ByM-ZC-Qae">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" numberOfLines="5" minimumScaleFactor="0.30000000000000004" id="mdR-LE-IIi">
+                                                <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                            </label>
+                                            <label width="40" alignment="right" verticalAlignment="center" text="1234" textAlignment="right" minimumScaleFactor="0.050000000000000003" id="lzc-ka-9WJ"/>
+                                        </items>
+                                        <color key="backgroundColor" red="1" green="0.32549019610000002" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <edgeInsets key="margins" left="3" right="3" top="3" bottom="4"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="countLabel" destination="lzc-ka-9WJ" id="9Zd-h3-kXO"/>
+                                        <outlet property="titleLabel" destination="mdR-LE-IIi" id="Vuy-yo-SIy"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <menu key="menu" id="QfD-AO-dCA">
+                        <items>
+                            <menuItem title="Add" icon="add" id="8kw-TP-NYA">
+                                <connections>
+                                    <action selector="addItem" destination="AgC-eL-Hgc" id="4lQ-2Y-t9U"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Delete All" icon="trash" id="H6x-BG-KDx">
+                                <connections>
+                                    <action selector="deleteAllItems" destination="AgC-eL-Hgc" id="mIF-Ji-SBp"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Name Sort" icon="shuffle" id="k9u-pZ-DIu">
+                                <connections>
+                                    <action selector="sortByName" destination="AgC-eL-Hgc" id="2ps-jI-U1v"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Count Sort" icon="repeat" id="yhl-3D-zDa">
+                                <connections>
+                                    <action selector="sortByCount" destination="AgC-eL-Hgc" id="nCF-dX-TOA"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="countingInterfaceTable" destination="EZb-r4-qQX" id="WbY-tC-NOJ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Count-->
+        <scene sceneID="26Y-Ve-u2M">
+            <objects>
+                <controller identifier="count" title="Count" id="xXR-oe-sPP" customClass="CountInterfaceController">
+                    <items>
+                        <group width="1" height="0.94999999999999996" alignment="left" layout="vertical" id="gpP-FH-icH">
+                            <items>
+                                <group width="1" height="0.29999999999999999" alignment="left" layout="vertical" id="hfF-xT-PW4">
+                                    <items>
+                                        <label width="1" height="0.80000000000000004" alignment="left" verticalAlignment="bottom" text="Label" textAlignment="center" minimumScaleFactor="0.30000000000000004" id="ZPn-sM-mbB">
+                                            <fontDescription key="font" type="system" pointSize="20"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="1" height="0.40000000000000002" alignment="left" layout="vertical" id="fPY-eH-D39">
+                                    <items>
+                                        <label width="1" height="1" alignment="right" verticalAlignment="center" text="1234" textAlignment="center" minimumScaleFactor="0.14999999999999997" id="NW3-v5-Ftg">
+                                            <fontDescription key="font" type="system" weight="ultraLight" pointSize="70"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="1" height="0.29999999999999999" alignment="left" id="nj2-xm-Jr5">
+                                    <items>
+                                        <button width="0.5" height="0.80000000000000004" alignment="left" title="–" id="79P-Wr-nma">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="0.94736842105263164" green="0.95339464705775789" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" weight="thin" pointSize="40"/>
+                                            <connections>
+                                                <action selector="countDown" destination="xXR-oe-sPP" id="EBu-Ze-t8r"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.5" height="0.80000000000000004" alignment="left" title="+" id="30a-Kl-Y5B">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.98823529409999999" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" weight="thin" pointSize="40"/>
+                                            <connections>
+                                                <action selector="countUp" destination="xXR-oe-sPP" id="82m-ac-2VZ"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" red="1" green="0.32549019610000002" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                    </items>
+                    <menu key="menu" id="Mx4-HO-TRe">
+                        <items>
+                            <menuItem title="Edit Name" icon="more" id="CrL-ok-5Hy">
+                                <connections>
+                                    <action selector="editName" destination="xXR-oe-sPP" id="9eh-Do-cJ8"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Delete" icon="trash" id="dFN-Qk-hkm">
+                                <connections>
+                                    <action selector="deleteCount" destination="xXR-oe-sPP" id="aCP-3z-zQ6"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="countLabel" destination="NW3-v5-Ftg" id="7Aa-PB-SCA"/>
+                        <outlet property="minusButton" destination="79P-Wr-nma" id="Smh-DL-kIc"/>
+                        <outlet property="plusButton" destination="30a-Kl-Y5B" id="W81-vt-H8J"/>
+                        <outlet property="titleLabel" destination="ZPn-sM-mbB" id="OHh-sp-Cxg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="345.00000438094139"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="1" green="0.32549019610000002" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>WWDC15 Release.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>WWDC15.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>Yichen Cao WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>5F044D701ADF9659009C9088</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5F044D851ADF965A009C9088</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5F71EE321AE5D5F200699295</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5F71EE571AE5D69100699295</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

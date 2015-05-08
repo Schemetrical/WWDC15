@@ -1,0 +1,1 @@
+../../../PMTween/Classes/EasingTypes/PMTweenEasingQuadratic.h

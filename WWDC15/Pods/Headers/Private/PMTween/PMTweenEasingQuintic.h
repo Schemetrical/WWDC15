@@ -1,0 +1,1 @@
+../../../PMTween/Classes/EasingTypes/PMTweenEasingQuintic.h

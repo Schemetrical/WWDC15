@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/MZAppearance" "${PODS_ROOT}/Headers/Public/MZFormSheetController" "${PODS_ROOT}/Headers/Public/NSUserDefaults+Subscripting" "${PODS_ROOT}/Headers/Public/PMTween" "${PODS_ROOT}/Headers/Public/PureLayout"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/MZAppearance" -isystem "${PODS_ROOT}/Headers/Public/MZFormSheetController" -isystem "${PODS_ROOT}/Headers/Public/NSUserDefaults+Subscripting" -isystem "${PODS_ROOT}/Headers/Public/PMTween" -isystem "${PODS_ROOT}/Headers/Public/PureLayout"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-WWDC15-MZAppearance" -l"Pods-WWDC15-MZFormSheetController" -l"Pods-WWDC15-NSUserDefaults+Subscripting" -l"Pods-WWDC15-PMTween" -l"Pods-WWDC15-PureLayout" -framework "Accelerate" -framework "Foundation" -framework "QuartzCore"
+OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+PODS_ROOT = ${SRCROOT}/Pods
